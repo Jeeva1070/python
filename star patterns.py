@@ -6,7 +6,7 @@ for row in range(n):
           else:
               print(end=" ")
       print()
-        
+#------------------------------------------------------------------------------        
 n=int(input("enter the input"))#down star 
 for row in range(n):
       for col in range(n):
@@ -15,7 +15,7 @@ for row in range(n):
           else:
               print(end=" ")
       print()
-
+#------------------------------------------------------------------------------ 
 print("-----------hollow triangle-------------")       
 for row in range(1,5):
       for col in range(1,8):
@@ -38,3 +38,28 @@ for row in range(1,n+1):
             else:
                   print(end=" ")
       print()
+#------------------------------------------------------------------------------ 
+n=int(input("enter the rows"))#while loop triangle
+row=0
+while row<n:
+      star=row+1
+      while star>0:
+            print("*",end="")
+            star=star-1
+      row=row+1
+      print()
+#------------------------------------------------------------------------------  
+num=int(input("enter the rows:"))#while loop pyramid
+row=0
+while row<num:
+      space=num-row-1
+      while space>0:
+            print(end=" ")
+            space=space-1
+      star=row+1
+      while star>0:
+            print("*",end=" ")
+            star=star-1
+      row=row+1
+      print()
+            
