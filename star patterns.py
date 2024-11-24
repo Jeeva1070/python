@@ -62,4 +62,11 @@ while row<num:
             star=star-1
       row=row+1
       print()
-            
+ #------------------------------------------------------------------------------             
+for row in range(5):#diamond program
+    for col in range(5):
+        if row+col==2 or row+col==6 or row-col==2 or col-row==2:
+            print("*",end="")
+        else:
+            print(end=" ")
+    print()
